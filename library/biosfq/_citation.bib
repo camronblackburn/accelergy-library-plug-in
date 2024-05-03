@@ -1,0 +1,63 @@
+ADDER: 
+@ARTICLE{10025817,
+  author={Yamae, Taiki and Takeuchi, Naoki and Yoshikawa, Nobuyuki},
+  journal={IEEE Transactions on Applied Superconductivity}, 
+  title={An Adiabatic Quantum-Flux-Parametron 8-bit Ripple Carry Adder Using Delay-Line Clocking}, 
+  year={2023},
+  volume={33},
+  number={5},
+  pages={1-4},
+  doi={10.1109/TASC.2023.3239833}}
+
+MULTIPLIER:
+@article{chen_adiabatic_2019,
+	title = {Adiabatic Quantum-Flux-Parametron: Towards Building Extremely Energy-Efficient Circuits and Systems},
+	volume = {9},
+	rights = {2019 The Author(s)},
+	issn = {2045-2322},
+	url = {https://www.nature.com/articles/s41598-019-46595-w},
+	doi = {10.1038/s41598-019-46595-w},
+	shorttitle = {Adiabatic Quantum-Flux-Parametron},
+	pages = {10514},
+	number = {1},
+	journaltitle = {Sci Rep},
+	author = {Chen, Olivia and Cai, Ruizhe and Wang, Yanzhi and Ke, Fei and Yamae, Taiki and Saito, Ro and Takeuchi, Naoki and Yoshikawa, Nobuyuki},
+	urldate = {2024-04-09},
+	date = {2019-07-19},
+	langid = {english},
+	note = {Publisher: Nature Publishing Group},
+	keywords = {Electrical and electronic engineering, Superconducting devices},
+}
+
+REG: 
+extrapolated to 16-bit single stage register from two papers
+1-stage 4-bit register - 1.55aJ [1]
+1-stage 1-bit register - 1.125aJ [2]
+therefore, ~0.142aJ per additional register bit --> 16-bit single stage register - 3.255aJ
+
+[1] Chen 2019 
+@ARTICLE{8676266,
+  author={Chen, Olivia and Saito, Ro and Tanaka, Tomoyuki and Ayala, Christopher L. and Takeuchi, Naoki and Yoshikawa, Nobuyuki},
+  journal={IEEE Transactions on Applied Superconductivity}, 
+  title={Design of Adiabatic Quantum-Flux-Parametron Register Files Using a Top-Down Design Flow}, 
+  year={2019},
+  volume={29},
+  number={5},
+  pages={1-5},
+  keywords={Registers;Multiplexing;Logic gates;Decoding;Libraries;Clocks;Manuals;Superconducting integrated circuits;HDL;AQFP logic;EDA tools;register file},
+  doi={10.1109/TASC.2019.2908277}}
+
+[2] Tsuji 2017 
+@ARTICLE{7828038,
+  author={Tsuji, Naoki and Ayala, Christopher L. and Takeuchi, Naoki and Ortlepp, Thomas and Yamanashi, Yuki and Yoshikawa, Nobuyuki},
+  journal={IEEE Transactions on Applied Superconductivity}, 
+  title={Design and Implementation of a 16-Word by 1-Bit Register File Using Adiabatic Quantum Flux Parametron Logic}, 
+  year={2017},
+  volume={27},
+  number={4},
+  pages={1-4},
+  keywords={Registers;Logic gates;Decoding;Clocks;Latches;Junctions;Energy efficiency;Superconducting circuits;QFP;adiabatic logic;latch;register file},
+  doi={10.1109/TASC.2017.2656128}}
+
+REGFILE: 
+reg * width * depth 
