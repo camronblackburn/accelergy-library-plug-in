@@ -1,0 +1,3 @@
+technology,global_cycle_seconds, datawidth, energy, area, action
+rql, 1e-10, 32, 0.000222, 1000000, read | write | update 
+rql, 1e-10, 32, 0, 1000000, leak
